@@ -43,7 +43,7 @@
         android:layout_marginStart="46dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="296dp"
-        android:text="Order Type"
+        android:text="@string/order_type"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.638"
@@ -71,7 +71,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="280dp"
-        android:text="Technician"
+        android:text="@string/tech"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
-        android:text="Inspection"
+        android:text="@string/inspect"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
-        android:text="Paint"
+        android:text="@string/paint"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -118,7 +118,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
-        android:text="Parts"
+        android:text="@string/parts"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -129,7 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
-        android:text="Labor"
+        android:text="@string/labor"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -184,7 +184,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="212dp"
         android:layout_marginTop="92dp"
-        android:text="Subtotal"
+        android:text="@string/subtotal"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
@@ -195,7 +195,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="212dp"
         android:layout_marginTop="22dp"
-        android:text="Tax"
+        android:text="@string/tax"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -206,7 +206,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="212dp"
         android:layout_marginTop="22dp"
-        android:text="Total"
+        android:text="@string/total"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -217,7 +217,7 @@
         android:layout_height="68dp"
         android:layout_marginStart="212dp"
         android:layout_marginBottom="48dp"
-        android:text="Submit"
+        android:text="@string/submit"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -228,7 +228,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="30dp"
-        android:text="$0.00"
+        android:text="@string/subtotal_amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
 
@@ -238,7 +238,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
-        android:text="$0.00"
+        android:text="@string/tax_amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -248,7 +248,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
-        android:text="$0.00"
+        android:text="@string/total_amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 

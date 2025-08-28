@@ -2,5 +2,18 @@
     <string name="app_name">RepairOrder</string>
     <string name="repair_order">Repair Order</string>
     <string name="text_view">TextView</string>
+    <string name="order_type">Order Type</string>
+    <string name="tech">Technician</string>
+    <string name="inspect">Inspection</string>
+    <string name="paint">Paint</string>
+    <string name="parts">Parts</string>
+    <string name="labor">Labor</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="submit">Submit</string>
+    <string name="subtotal_amount">$0.00</string>
+    <string name="tax_amount">$0.00</string>
+    <string name="total_amount">$0.00</string>
 
 </resources>
