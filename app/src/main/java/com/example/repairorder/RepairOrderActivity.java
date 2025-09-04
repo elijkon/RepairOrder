@@ -24,11 +24,11 @@ public class RepairOrderActivity extends AppCompatActivity {
     View.OnClickListener buttonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Random gen = new Random();
+            /*Random gen = new Random();
 
             double number =  gen.nextDouble();
             String amount  = "$ " + number;
-            subtotalTV.setText(amount);
+            subtotalTV.setText(amount); */
 
             String orderTypeVal = orderET.getText().toString();
             Integer OT = Integer.getInteger(orderTypeVal);
@@ -43,7 +43,11 @@ public class RepairOrderActivity extends AppCompatActivity {
             Double partsValDouble = Double.parseDouble(partsVal);
 
             String laborVal = laborET.getText().toString();
+            Double laborValDouble = Double.parseDouble(laborVal);
 
+            double subtotalAmount = laborValDouble + partsValDouble + paintValDouble + inspectValDouble;
+
+            //subtotalTV.setText();
         }
     };
 
