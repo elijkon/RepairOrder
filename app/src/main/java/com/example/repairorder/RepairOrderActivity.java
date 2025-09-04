@@ -16,8 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.Random;
 
 public class RepairOrderActivity extends AppCompatActivity {
-    double numbers = 0.0;
-    TextView subtotalTV, totalTV;
+    TextView subtotalTV, totalTV, taxTV;
     Button submitB;
     EditText partsET, laborET, paintET, inspectionET, orderET;
 
@@ -28,10 +27,11 @@ public class RepairOrderActivity extends AppCompatActivity {
 
             double number =  gen.nextDouble();
             String amount  = "$ " + number;
-            subtotalTV.setText(amount); */
+            subtotalTV.setText(amount);
 
             String orderTypeVal = orderET.getText().toString();
             Integer OT = Integer.getInteger(orderTypeVal);
+            */
 
             String inspectionVal = inspectionET.getText().toString();
             Double inspectValDouble = Double.parseDouble(inspectionVal);
@@ -46,8 +46,17 @@ public class RepairOrderActivity extends AppCompatActivity {
             Double laborValDouble = Double.parseDouble(laborVal);
 
             double subtotalAmount = laborValDouble + partsValDouble + paintValDouble + inspectValDouble;
+            String subtotalStringAmount = "$ " + subtotalAmount;
+            subtotalTV.setText(subtotalStringAmount);
 
-            //subtotalTV.setText();
+            double taxAmount = subtotalAmount * 0.09;
+            String taxTotal = "$ " + taxAmount;
+            taxTV.setText(taxTotal);
+
+            double totalAmount = subtotalAmount + taxAmount;
+            String total = "$ " + totalAmount;
+            totalTV.setText(total);
+
         }
     };
 
@@ -67,8 +76,11 @@ public class RepairOrderActivity extends AppCompatActivity {
 
 
         totalTV = findViewById(R.id.totalAmount);
+        taxTV = findViewById(R.id.taxAmount);
+
         submitB = findViewById(R.id.submitButton);
         submitB.setOnClickListener(buttonListener);
+
         subtotalTV = findViewById(R.id.subtotalAmount);
         orderET = findViewById(R.id.typeInput);
         inspectionET = findViewById(R.id.inspectInput);

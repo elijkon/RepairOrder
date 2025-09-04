@@ -141,7 +141,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="55dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/techInput" />
 
@@ -152,7 +152,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="55dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inspectInput" />
 
@@ -163,7 +163,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="55dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paintInput" />
 
@@ -174,7 +174,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="55dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/partsInput" />
 
