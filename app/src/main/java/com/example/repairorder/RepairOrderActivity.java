@@ -16,6 +16,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class RepairOrderActivity extends AppCompatActivity {
@@ -23,6 +24,9 @@ public class RepairOrderActivity extends AppCompatActivity {
     Button submitB;
     EditText partsET, laborET, paintET, inspectionET, orderET;
     Spinner ordSpinner;
+
+    ArrayList<String> orderTypes = new ArrayList<>();
+
 
 
     AdapterView.OnItemSelectedListener spinnerListener = new AdapterView.OnItemSelectedListener() {
@@ -104,15 +108,30 @@ public class RepairOrderActivity extends AppCompatActivity {
         partsET = findViewById(R.id.partsInput);
         laborET = findViewById(R.id.laborInput);
 
+        //spinner stuff
         ordSpinner = findViewById(R.id.orderSpinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+//                this,
+//                R.array.order_types,
+//                android.R.layout.simple_spinner_item
+//
+//        );
+        orderTypes.add("Oil Change");
+        orderTypes.add("Tire Rotation");
+        orderTypes.add("Brake Inspection");
+        orderTypes.add("Paint Job");
+        orderTypes.add("Engine Repair");
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
-                R.array.order_types,
-                android.R.layout.simple_spinner_item
+                android.R.layout.simple_spinner_item,
+                orderTypes
         );
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ordSpinner.setAdapter(adapter);
+        ordSpinner.setOnItemSelectedListener(spinnerListener);
+
+
 
 
     }
